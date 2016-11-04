@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-4x-8Rm">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Otp-ns-5AI">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dbt-B2-Vyf">
+                                <rect key="frame" x="20" y="560" width="560" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70s-ru-8pq">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="btnStart_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tv-QU-QFP"/>
+                                            <action selector="buttonStartClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fc-hm-Hiu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQX-PK-pje">
+                                        <rect key="frame" x="190" y="0.0" width="180" height="30"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="btnStop_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSn-WD-W8D"/>
+                                            <action selector="buttonStopClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nTm-W4-zI9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-gg-DVk">
+                                        <rect key="frame" x="380" y="0.0" width="180" height="30"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="btnClear_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C46-W5-1DO"/>
+                                            <action selector="buttonClearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fc7-PE-nJf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CFM-SB-YTs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fhm-4x-8Rm" secondAttribute="bottom" id="0sw-iz-nQa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dbt-B2-Vyf" secondAttribute="trailing" id="1GI-b5-aTH"/>
+                            <constraint firstItem="fhm-4x-8Rm" firstAttribute="top" secondItem="Dbt-B2-Vyf" secondAttribute="top" constant="-10" id="CMN-Vn-Pbo"/>
+                            <constraint firstItem="fhm-4x-8Rm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FcN-Uj-ZU6"/>
+                            <constraint firstItem="Dbt-B2-Vyf" firstAttribute="top" secondItem="CFM-SB-YTs" secondAttribute="bottom" constant="10" id="Gfy-kB-pVc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CFM-SB-YTs" secondAttribute="bottom" id="Jjh-G4-zZg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fhm-4x-8Rm" secondAttribute="trailing" id="LIl-Xb-nVL"/>
+                            <constraint firstItem="CFM-SB-YTs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lec-fa-gf0"/>
+                            <constraint firstItem="CFM-SB-YTs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T1i-Fb-QfQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dbt-B2-Vyf" secondAttribute="bottom" constant="10" id="Try-6U-ucq"/>
+                            <constraint firstAttribute="trailing" secondItem="CFM-SB-YTs" secondAttribute="trailing" id="UYR-cv-7Ny"/>
+                            <constraint firstItem="Dbt-B2-Vyf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Uym-PN-LUy"/>
+                            <constraint firstItem="CFM-SB-YTs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YIf-Ql-hlb"/>
+                            <constraint firstItem="CFM-SB-YTs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ysy-cV-SNF"/>
+                            <constraint firstItem="fhm-4x-8Rm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i9u-46-0m7"/>
+                            <constraint firstItem="CFM-SB-YTs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pL2-i3-xtS"/>
+                            <constraint firstAttribute="trailing" secondItem="fhm-4x-8Rm" secondAttribute="trailing" id="uXL-96-VSc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YIf-Ql-hlb"/>
+                                <exclude reference="Ysy-cV-SNF"/>
+                                <exclude reference="pL2-i3-xtS"/>
+                                <exclude reference="LIl-Xb-nVL"/>
+                                <exclude reference="i9u-46-0m7"/>
+                                <exclude reference="Gfy-kB-pVc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnClear" destination="hDw-gg-DVk" id="XeU-dg-HvM"/>
+                        <outlet property="btnStart" destination="70s-ru-8pq" id="kXI-Bp-Jvh"/>
+                        <outlet property="btnStop" destination="dQX-PK-pje" id="Dxj-Kc-uAl"/>
+                        <outlet property="buttonClear" destination="hDw-gg-DVk" id="n7h-1y-4Qa"/>
+                        <outlet property="buttonStart" destination="70s-ru-8pq" id="Rga-nq-0be"/>
+                        <outlet property="buttonStop" destination="dQX-PK-pje" id="NYz-Yx-qX0"/>
+                        <outlet property="mapView" destination="CFM-SB-YTs" id="ZFk-Dk-p3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="398"/>
+        </scene>
+    </scenes>
+</document>
