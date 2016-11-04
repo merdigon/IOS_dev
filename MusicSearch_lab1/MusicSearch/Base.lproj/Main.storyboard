@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-uO-bd3">
+                                <rect key="frame" x="20" y="28" width="65" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Iav-m2-3Vv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-Uu-fdz">
+                                <rect key="frame" x="32" y="66" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgX-pB-Xsq">
+                                <rect key="frame" x="20" y="104" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iby-eM-HEW">
+                                <rect key="frame" x="33" y="142" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IO-Pw-Hql">
+                                <rect key="frame" x="82" y="176" width="45" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="lblGrade"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UO5-ne-YxZ">
+                                <rect key="frame" x="20" y="176" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8p-aN-HX3">
+                                <rect key="frame" x="548" y="212" width="32" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="btnNext"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afd-qb-v1L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGt-yW-Aao">
+                                <rect key="frame" x="278" y="299" width="45" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="btnDelete"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDeletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xA3-I8-vNe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJH-jz-en0">
+                                <rect key="frame" x="20" y="212" width="31" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="btnPrev"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="btnPrevPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dy2-xC-ybk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tc-OZ-Veb">
+                                <rect key="frame" x="285" y="337" width="31" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="btnNew"/>
+                                <state key="normal" title="New"/>
+                                <connections>
+                                    <action selector="btnNewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJc-qt-YmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-JQ-HPR">
+                                <rect key="frame" x="283" y="261" width="34" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="btnSave">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ai9-aH-BKp"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSavePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1zN-QB-bGS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RU6-EP-3lX" userLabel="tbArtist">
+                                <rect key="frame" x="74" y="24" width="506" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tbArtist"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tbArtistTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="6lo-LH-JkM"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbt-Gw-6vh" userLabel="tbTitle">
+                                <rect key="frame" x="74" y="62" width="506" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tbTitle"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="506" id="2Fe-s4-PVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tbTitleTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="s1c-wF-Ijx"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBW-8h-PGk" userLabel="tbGenre">
+                                <rect key="frame" x="74" y="100" width="506" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tbGenre"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tbGenreTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="TXK-Xz-tih"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-ZN-WIh" userLabel="tbYear">
+                                <rect key="frame" x="74" y="138" width="506" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tbYear"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tbYearTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="64D-96-DPt"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record - of 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS8-fm-X3i">
+                                <rect key="frame" x="250" y="375" width="101" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="lblTotal"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zKL-tW-j08">
+                                <rect key="frame" x="135" y="172" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stpRatingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jPi-dt-s3E"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="qQx-uO-bd3" secondAttribute="leading" id="15g-UI-eJt"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UO5-ne-YxZ" secondAttribute="leading" id="21S-CG-l9X"/>
+                            <constraint firstItem="tJH-jz-en0" firstAttribute="top" secondItem="UO5-ne-YxZ" secondAttribute="bottom" constant="15" id="2mp-UF-QP1"/>
+                            <constraint firstItem="9tc-OZ-Veb" firstAttribute="top" secondItem="LGt-yW-Aao" secondAttribute="bottom" constant="8" id="4Cp-vy-a5i"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tJH-jz-en0" secondAttribute="leading" id="5rh-rE-BDY"/>
+                            <constraint firstItem="iPw-ZN-WIh" firstAttribute="leading" secondItem="iby-eM-HEW" secondAttribute="trailing" constant="7" id="6aL-pf-oxx"/>
+                            <constraint firstItem="RU6-EP-3lX" firstAttribute="leading" secondItem="qQx-uO-bd3" secondAttribute="trailing" constant="-11" id="6kJ-V7-ceo"/>
+                            <constraint firstItem="LGt-yW-Aao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AVX-4R-e58"/>
+                            <constraint firstItem="z3U-Uu-fdz" firstAttribute="top" secondItem="qQx-uO-bd3" secondAttribute="bottom" constant="17" id="COL-sh-7dM"/>
+                            <constraint firstItem="iBW-8h-PGk" firstAttribute="top" secondItem="Pbt-Gw-6vh" secondAttribute="bottom" constant="8" id="D87-Mf-GrM"/>
+                            <constraint firstItem="qQx-uO-bd3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DLv-fW-xpF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pbt-Gw-6vh" secondAttribute="trailing" id="Du5-Hs-fgG"/>
+                            <constraint firstItem="JS8-fm-X3i" firstAttribute="top" secondItem="9tc-OZ-Veb" secondAttribute="bottom" constant="8" id="H2X-sS-N3h"/>
+                            <constraint firstItem="iBW-8h-PGk" firstAttribute="leading" secondItem="YgX-pB-Xsq" secondAttribute="trailing" constant="7" id="JbS-b6-zmo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iPw-ZN-WIh" secondAttribute="trailing" id="QEn-eT-zcX"/>
+                            <constraint firstItem="Pbt-Gw-6vh" firstAttribute="leading" secondItem="z3U-Uu-fdz" secondAttribute="trailing" constant="8" id="TQE-La-lhO"/>
+                            <constraint firstItem="8C5-JQ-HPR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsw-Jr-Gv2"/>
+                            <constraint firstItem="Pbt-Gw-6vh" firstAttribute="top" secondItem="RU6-EP-3lX" secondAttribute="bottom" constant="8" id="XXc-rc-eXw"/>
+                            <constraint firstItem="z3U-Uu-fdz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Xcl-hK-xME"/>
+                            <constraint firstItem="UO5-ne-YxZ" firstAttribute="top" secondItem="iby-eM-HEW" secondAttribute="bottom" constant="13" id="Y9f-1a-SZc"/>
+                            <constraint firstItem="8IO-Pw-Hql" firstAttribute="leading" secondItem="UO5-ne-YxZ" secondAttribute="trailing" constant="8" id="ZH2-fm-QWb"/>
+                            <constraint firstItem="YgX-pB-Xsq" firstAttribute="top" secondItem="z3U-Uu-fdz" secondAttribute="bottom" constant="17" id="dqz-Rk-ba8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YgX-pB-Xsq" secondAttribute="leading" id="ei1-8t-KbE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iBW-8h-PGk" secondAttribute="trailing" id="f55-go-Pd4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RU6-EP-3lX" secondAttribute="trailing" id="gPA-TQ-DcW"/>
+                            <constraint firstItem="iby-eM-HEW" firstAttribute="top" secondItem="YgX-pB-Xsq" secondAttribute="bottom" constant="17" id="hsG-SM-0bu"/>
+                            <constraint firstItem="iPw-ZN-WIh" firstAttribute="top" secondItem="iBW-8h-PGk" secondAttribute="bottom" constant="8" id="ioK-LX-CXo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q8p-aN-HX3" secondAttribute="trailing" id="lIL-lq-NVc"/>
+                            <constraint firstItem="LGt-yW-Aao" firstAttribute="top" secondItem="8C5-JQ-HPR" secondAttribute="bottom" constant="8" id="ldq-RL-yLG"/>
+                            <constraint firstItem="JS8-fm-X3i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfA-sA-sMI"/>
+                            <constraint firstItem="8C5-JQ-HPR" firstAttribute="top" secondItem="tJH-jz-en0" secondAttribute="bottom" constant="19" id="q8d-f4-i4X"/>
+                            <constraint firstItem="RU6-EP-3lX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="tNe-gS-PEP"/>
+                            <constraint firstItem="Pbt-Gw-6vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="x2O-CX-LOH"/>
+                            <constraint firstItem="iby-eM-HEW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="xgF-1L-23s"/>
+                            <constraint firstItem="q8p-aN-HX3" firstAttribute="centerY" secondItem="tJH-jz-en0" secondAttribute="centerY" id="yT2-H0-AkR"/>
+                            <constraint firstItem="9tc-OZ-Veb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zK5-oJ-ZUF"/>
+                            <constraint firstItem="8IO-Pw-Hql" firstAttribute="top" secondItem="iby-eM-HEW" secondAttribute="bottom" constant="13" id="zT5-S6-7NY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnNext" destination="q8p-aN-HX3" id="yOr-jy-0km"/>
+                        <outlet property="btnPrev" destination="tJH-jz-en0" id="GI7-ct-5AJ"/>
+                        <outlet property="btnSave" destination="8C5-JQ-HPR" id="qSg-2a-YGa"/>
+                        <outlet property="lblRating" destination="8IO-Pw-Hql" id="LYD-BY-8LD"/>
+                        <outlet property="lblRecords" destination="JS8-fm-X3i" id="kVi-Z3-Wk4"/>
+                        <outlet property="stpRating" destination="zKL-tW-j08" id="1GJ-wX-0Rd"/>
+                        <outlet property="tbArtist" destination="RU6-EP-3lX" id="05G-pv-y2o"/>
+                        <outlet property="tbGenre" destination="iBW-8h-PGk" id="RQv-r8-DE9"/>
+                        <outlet property="tbTittle" destination="Pbt-Gw-6vh" id="xgX-sy-G4v"/>
+                        <outlet property="tbYear" destination="iPw-ZN-WIh" id="H2c-hZ-SJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
